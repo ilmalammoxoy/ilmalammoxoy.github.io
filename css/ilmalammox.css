@@ -102,7 +102,7 @@ blockquote {
 .button {
   color: #fff;
   text-align: center;
-  background-color: #f60;
+  background-color: #fc6604;
   border-radius: 50px;
   padding: 16px 36px;
   font-family: Claritycity, sans-serif;
@@ -132,7 +132,7 @@ blockquote {
 }
 
 .button.small {
-  background-color: #f60;
+  background-color: #fc6604;
   padding: 14px 32px;
 }
 
@@ -318,7 +318,7 @@ blockquote {
 }
 
 .caption {
-  color: #f60;
+  color: #fc6604;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 14px;
@@ -364,7 +364,7 @@ blockquote {
 }
 
 .section.cta {
-  background-color: #f60;
+  background-color: #fc6604;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -693,8 +693,17 @@ blockquote {
   display: flex;
 }
 
-.featured-client-logo {
+.client-logo {
   height: 31px;
+}
+
+.client-logo.wide {
+  width: 140px;
+  height: auto;
+}
+
+.client-logo.short {
+  height: 28px;
 }
 
 .ft-logo-grid-v2 {
@@ -1157,7 +1166,7 @@ blockquote {
 }
 
 .small-caption {
-  color: #f60;
+  color: #fc6604;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 11px;
@@ -1772,6 +1781,14 @@ blockquote {
   height: 48px;
 }
 
+.company-logo.small {
+  height: 35px;
+}
+
+.company-logo.large {
+  height: 66px;
+}
+
 .space-60 {
   height: 60px;
 }
@@ -2329,9 +2346,14 @@ blockquote {
 
   .featured-clients-grid {
     width: 90%;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-rows: 90px;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(90px, auto);
+    grid-auto-columns: 1fr;
     grid-auto-flow: row;
+    display: grid;
   }
 
   .footer-list {
@@ -2608,12 +2630,14 @@ blockquote {
     padding-right: 0;
   }
 
-  .featured-client-logo {
+  .client-logo {
     height: 20px;
   }
 
   .featured-clients-grid {
     width: auto;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
   }
 
   .footer-list {
@@ -2908,13 +2932,13 @@ blockquote {
     flex-direction: column;
   }
 
-  .featured-client-logo {
+  .client-logo {
     height: 30px;
   }
 
   .featured-clients-grid {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     flex-direction: column;
     grid-template-columns: 1fr;
   }
