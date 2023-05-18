@@ -359,8 +359,8 @@ blockquote {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 140px;
-  padding-bottom: 120px;
+  padding-top: 135px;
+  padding-bottom: 110px;
 }
 
 .section.cta {
@@ -636,8 +636,9 @@ blockquote {
 .custom-list-small {
   width: 16px;
   height: 16px;
-  background-image: url('../images/gray-checkmark_1gray checkmark.png');
-  background-position: 0 0;
+  background-image: url('../images/check-orange-cropped.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
   background-size: contain;
   flex: 0 auto;
   margin-top: 2px;
@@ -1724,6 +1725,7 @@ blockquote {
 .accordion-trigger {
   cursor: pointer;
   border: 1px solid #ced6e0;
+  border-radius: 16px;
   justify-content: space-between;
   align-items: center;
   padding: 14px 15px 14px 32px;
@@ -1809,7 +1811,7 @@ blockquote {
   width: 100%;
   height: 550px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .company-logo-wrap {
@@ -2123,6 +2125,34 @@ blockquote {
   font-weight: 600;
 }
 
+.banner {
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+  background-color: #fc6719;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 64px;
+  display: flex;
+}
+
+.banner-icon {
+  width: 24px;
+}
+
+.h2-banner {
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.banner-link {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1280px) {
   .section.hero {
     padding-bottom: 100px;
@@ -2310,6 +2340,10 @@ blockquote {
     position: relative;
   }
 
+  .section.contact-info-top {
+    display: none;
+  }
+
   .row.no-padding-bottom.cta {
     grid-column-gap: 24px;
     grid-row-gap: 24px;
@@ -2327,6 +2361,10 @@ blockquote {
 
   .entry-content.padding-right {
     padding-right: 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .service-item {
@@ -2536,6 +2574,11 @@ blockquote {
 
   ._3-col-grid-2 {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .banner {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -2771,6 +2814,11 @@ blockquote {
     padding-left: 35px;
     padding-right: 35px;
   }
+
+  .banner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2930,6 +2978,8 @@ blockquote {
 
   .service-item {
     flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
   .client-logo {
@@ -3097,7 +3147,7 @@ blockquote {
   }
 
   .logo-footer {
-    width: 140px;
+    width: 240px;
   }
 
   .footer-description {
@@ -3111,8 +3161,16 @@ blockquote {
     align-items: flex-end;
   }
 
+  .h2-cta {
+    max-width: none;
+  }
+
   .cta-button-wrap {
     flex-direction: column;
+  }
+
+  .img-cta {
+    width: 60px;
   }
 
   .accordion-trigger {
@@ -3215,6 +3273,20 @@ blockquote {
 
   .button-4.large {
     width: 100%;
+  }
+
+  .banner {
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+  }
+
+  .banner-icon {
+    display: none;
+  }
+
+  .h2-banner {
+    font-size: 18px;
+    line-height: 1.2;
   }
 }
 
