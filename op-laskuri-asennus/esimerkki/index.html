@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <title>Laskurin testisivu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sivuston koodit, katso hinnan asettaminen ohjelmallisesti index.js-tiedostosta -->
+    <link rel="stylesheet" type="text/css" href="./app/index.css">
+    <script type="text/javascript" src="./app/index.js"></script>
+    <!-- Laskurin koodit -->
+    <script type="text/javascript" src="../op-calc-widget.js"></script>
+    <link rel="stylesheet" type="text/css" href="../op-calc-widget.css">
+    <!-- Katso myös asetukset ennen sulkeutuvaa </body>-tagia -->
+</head>
+
+<body>
+    <main class="container">
+        <h1>Laskurin testisivu</h1>
+        <p>Käyttö: raahaa tämä tiedosto (index.html) verkkoselaimeesi.</p>
+        <hr />
+        <p>&nbsp;</p>
+        <h1>Rahoitus suoraan meiltä</h1>
+        <p>
+            <strong>Rahoitus isompaan hankintaan tai yksittäiseen ostokseen suoraan
+                meiltä, pankkiasiakkuudestasi riippumatta. Hae rahoitusta, kun
+                tiedät mistä ostat. Rahoitus 2 000 eurosta jopa 50 000 euroon asti.
+            </strong>
+        </p>
+        <h2>Miksi ottaa rahoitus?</h2>
+        <ul>
+            <li>
+                Hae rahoituspäätös verkossa. Rahoitus on heti käytössäsi
+                valitsemassasi liikkeessä. Hakemus ei sido lainan nostamiseen.
+            </li>
+            <li>
+                Luotettava ja kätevä maksutapa - tehtyäsi kaupat myyjän kanssa maksat rahoitusta kuukausittain suoraan OP:lle.
+            </li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            molestiae illum hic corporis fuga sed ipsam quam animi adipisci
+            quibusdam tempore eum perspiciatis consequatur officia quae minus amet
+            mollitia odio!
+        </p>
+        <div class="product">
+            <h3>IBM 5150 Personal Computer</h3>
+            <div class="span">
+                <img src="./app/image.jpg" alt="IBM näppäimistö - https://unsplash.com/@melocokr" title="IBM näppäimistö - https://unsplash.com/@melocokr" />
+                <span>IBM PC julkistettiin 12. elokuuta 1981 ja sen hinta silloin oli 1
+                    565 Yhdysvaltain dollaria. IBM PC:n menestys teki Bill Gatesin
+                    MS-DOS-käyttöjärjestelmästä johtavan järjestelmän maailmassa.
+                    Vuonna 1984 IBM teki PC-liiketoiminnalla 4 miljardin dollarin
+                    liikevaihdon, mikä oli kaksi kertaa enemmän kuin Apple ja enemmän
+                    kuin Apple, Commodore, HP ja Sperry yhteensä ja koko IBM:n
+                    liikevaihdosta 6 %.</span>
+            </div>
+            <div>
+                <h4 class="price">
+                    Hinta: <span class="price-amount">5000</span>&nbsp;€
+                </h4>
+                <div id="op-keti-init-product"></div>
+                <select name="" id="example-product">
+                    <option value="5000">1KB muistia</option>
+                    <option value="5950">2KB muistia</option>
+                    <option value="7500">3KB muistia</option>
+                    <option value="10000">4KB muistia</option>
+                </select>
+                <button type="button" id="to-cart">Ostoskoriin</button>
+            </div>
+        </div>
+        <h2>Lisätietoa rahoituksesta</h2>
+        <ul>
+            <li>Et tarvitse vakuuksia tai takaajia</li>
+            <li>Saatavissa kaikkien pankkien asiakkaille</li>
+            <li>Kiinteä kuukausierä</li>
+            <li>
+                Soveltuu tuotteiden ja palveluiden rahoittamiseen, esim. asennustyöt
+            </li>
+            <li>
+                Sopii isomman hankinnan tai yksittäisen ostoksen rahoittamiseen
+            </li>
+            <li>
+                Voit tehdä rahoitussopimuksen verkossa ja tunnistautua oman pankkisi
+                tunnuksilla
+            </li>
+            <li>Tehtyäsi rahoitussopimuksen voit tehdä ostoksia heti</li>
+            <li>
+                Voit maksaa kuukausittain minimisumman tai isomman erän, tai vaikka
+                koko luoton kerralla pois
+            </li>
+        </ul>
+        <p>
+            <strong>Arvioi remontin kustannukset realistisesti</strong><br />
+            Remonttiin on usein järkevää hakea hiukan arvioituja kustannuksia
+            suurempi summa rahoitusta.
+        </p>
+        <div id="op-keti-init-content"></div>
+        <p>
+            <strong>Vähennä rahoituksen korot verotuksessa</strong><br />
+            Jos peruskorjaat asuntoasi tai olet uudisrakentaja, voit hakea korot
+            verovähennyksiin. OP ilmoittaa korkotiedot automaattisesti
+            verottajalle. Lisätietoja saat www.vero.fi. Peruskorjauksella
+            tarkoitetaan remonttia, jossa mennään niin sanotusti pintaa syvemmälle
+            eli uusitaan esimerkiksi talon lämpö-, vesi-, ilmanvaihto- ja
+            sähköjärjestelmiä.
+        </p>
+    </main>
+    <!-- Kelluva laskuri -->
+    <script type="text/javascript">
+    window.__opCalcAccount = window.__opCalcAccount ? window.__opCalcAccount : { "mode": "kertaluotto-uusi", "key": "kantaputki" };
+    window.__opCalcOpts = window.__opCalcOpts && Object.keys(window.__opCalcOpts).length ? window.__opCalcOpts : [];
+    window.__opCalcOpts["floating"] = { "linkCta": "https://eficode.pohjola-finance.fi/kertaluotto-uusi/kantaputki", "linkMore": "", "name": "Firmanen", "heading": "Rahoituksen määrä", "colorPrimary": "#ff6a10", "colorSecondary": "#ffffff", "textOpenBtn": "Maksa erissä", "percentage": [0.012, 0.017, 0.021, 0.028, 0.033, 0.05, 0.09], "enableInputChanges": true, "showCta": true, "type": "floating", showInfo:{realInterest:true,interestMargin:true,paybackTime:true,costEstimate:true}, texts:{ctaButton:"Tutustu ja hae",inputAmountLabel:"Rahoituksen määrä",teaser:"Maksa 1 kk päästä toimituksesta ...",floating:{openButton:"Maksa erissä"},product:{openButtonTextStart:"Tai",openButtonTextEnd:"rahoituksella."}}}
+    </script>
+    <!-- Laskuri rahoitussivulle tai muuhun sisältöön -->
+    <script type="text/javascript">
+    window.__opCalcAccount = window.__opCalcAccount ? window.__opCalcAccount : { "mode": "kertaluotto-uusi", "key": "kantaputki" };
+    window.__opCalcOpts = window.__opCalcOpts && Object.keys(window.__opCalcOpts).length ? window.__opCalcOpts : [];
+    window.__opCalcOpts["content"] = { "linkCta": "https://eficode.pohjola-finance.fi/kertaluotto-uusi/kantaputki", "linkMore": "", "name": "Firmanen", "heading": "Rahoituksen määrä", "colorPrimary": "#ff6a10", "colorSecondary": "#ffffff", "textOpenBtn": "Maksa erissä", "percentage": [0.012, 0.017, 0.021, 0.028, 0.033, 0.05, 0.09], "enableInputChanges": true, "showCta": true, "type": "content", showInfo:{realInterest:true,interestMargin:true,paybackTime:true,costEstimate:true}, texts:{ctaButton:"Tutustu ja hae",inputAmountLabel:"Rahoituksen määrä",teaser:"Maksa 1 kk päästä toimituksesta ...",floating:{openButton:"Maksa erissä"},product:{openButtonTextStart:"Tai",openButtonTextEnd:"rahoituksella."}}}
+    </script>
+    <!-- Tuotelaskuri -->
+    <script type="text/javascript">
+    window.__opCalcAccount = window.__opCalcAccount ? window.__opCalcAccount : { "mode": "kertaluotto-uusi", "key": "kantaputki" };
+    window.__opCalcOpts = window.__opCalcOpts && Object.keys(window.__opCalcOpts).length ? window.__opCalcOpts : [];
+    window.__opCalcOpts["product"] = { "linkCta": "https://eficode.pohjola-finance.fi/kertaluotto-uusi/kantaputki", "linkMore": "", "name": "Firmanen", "heading": "Rahoituksen määrä", "colorPrimary": "#ff6a10", "colorSecondary": "#ffffff", "textOpenBtn": "Maksa erissä", "percentage": [0.012, 0.017, 0.021, 0.028, 0.033, 0.05, 0.09], "enableInputChanges": true, "showCta": true, "type": "product", showInfo:{realInterest:true,interestMargin:true,paybackTime:true,costEstimate:true}, texts:{ctaButton:"Tutustu ja hae",inputAmountLabel:"Rahoituksen määrä",teaser:"Maksa 1 kk päästä toimituksesta ...",floating:{openButton:"Maksa erissä"},product:{openButtonTextStart:"Tai",openButtonTextEnd:"rahoituksella."}}}
+    </script>
+</body>
+
+</html>
